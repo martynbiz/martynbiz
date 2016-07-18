@@ -6,7 +6,11 @@ return [
 
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/../templates/',
+            'folders' => [
+                APPLICATION_PATH . '/src/app/templates',
+            ],
+            'ext' => 'phtml',
+            // 'autoescape' => true,
         ],
 
         // Monolog settings
