@@ -22,45 +22,67 @@ require __DIR__ . '/../vendor/autoload.php';
 
 session_start();
 
-// get directories within /src
-$modulePaths = array_filter(glob(APPLICATION_PATH . '/src/*'), 'is_dir');
 
+// ==================================
 // Instantiate the app
-$settings = [];
+
+// Compile app settings
+$settings = require APPLICATION_PATH . '/src/settings.php';
+if ($path = realpath(APPLICATION_PATH . '/src/settings.' . APPLICATION_ENV . '.php')) {
+    $settings = array_merge_recursive($settings, require $path);
+}
+
+// Compile module settings
+$modulePaths = array_filter(glob(APPLICATION_PATH . '/src/*'), 'is_dir');
 foreach ($modulePaths as $modulePath) {
     if ($path = realpath($modulePath . '/settings.php')) {
         $settings = array_merge_recursive($settings, require $path);
     }
-    if ($path = realpath($modulePath . '/settings.' . APPLICATION_ENV . '.php')) {
-        $settings = array_merge_recursive($settings, require $path);
-    }
 }
 
-// var_dump($settings); exit;
 $app = new \Slim\App($settings);
 
-MartynBiz\Mongo\Connection::getInstance()->init($settings['settings']['mongo']);
 
+// ==================================
 // Set up dependencies
+
+// Load app dependencies
+require APPLICATION_PATH . '/src/dependencies.php';
+
+// Load module dependencies
 foreach ($modulePaths as $modulePath) {
     if ($path = realpath($modulePath . '/dependencies.php')) {
         require $path;
     }
 }
 
+// ==================================
 // Register middleware
+
+// Load app middleware
+require APPLICATION_PATH . '/src/middleware.php';
+
+// Load module middleware
 foreach ($modulePaths as $modulePath) {
     if ($path = realpath($modulePath . '/middleware.php')) {
         require $path;
     }
 }
 
+// ==================================
 // Register routes
+
+// Load app routes
+require APPLICATION_PATH . '/src/routes.php';
+
+// Load module routes
 foreach ($modulePaths as $modulePath) {
     if ($path = realpath($modulePath . '/routes.php')) {
         require $path;
     }
 }
 
+
+// ==================================
 // Run app
 $app->run();

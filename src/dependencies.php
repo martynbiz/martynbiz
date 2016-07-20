@@ -3,6 +3,8 @@
 
 $container = $app->getContainer();
 
+MartynBiz\Mongo\Connection::getInstance()->init($settings['settings']['mongo']);
+
 // replace request with our own
 $container['request'] = function($c) {
     return App\Http\Request::createFromEnvironment($c->get('environment'));

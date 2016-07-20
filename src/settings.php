@@ -6,7 +6,7 @@ return [
         // Renderer settings
         'renderer' => [
             'folders' => [
-                APPLICATION_PATH . '/src/app/templates',
+                APPLICATION_PATH . '/templates',
             ],
             'ext' => 'phtml',
         ],
@@ -27,7 +27,7 @@ return [
             'type' => 'phparray',
 
             // where the translation files are stored
-            'file_path' => APPLICATION_PATH . '/src/app/language/',
+            'file_path' => APPLICATION_PATH . '/assets/language/',
         ],
 
         'mail' => [
