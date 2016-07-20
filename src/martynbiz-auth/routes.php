@@ -1,51 +1,52 @@
 <?php
 // Routes
 
-// $app->get('/session', '\MartynBiz\MartynBiz\Auth\Controller\SessionController:index')->setName('session_index');
+use MartynBiz\Auth\Middleware;
+use MartynBiz\Auth\Model\User;
 
 $container = $app->getContainer();
 
-$app->group('/auth', function () use ($app) {
+$app->group('/auth', function () {
 
-    $app->post('',
+    $this->post('',
         '\MartynBiz\Auth\Controller\SessionController:post')->setName('auth_session_post');
-    $app->delete('',
+    $this->delete('',
         '\MartynBiz\Auth\Controller\SessionController:delete')->setName('auth_session_delete');
-    $app->get('/login',
+    $this->get('/login',
         '\MartynBiz\Auth\Controller\SessionController:index')->setName('auth_session_login');
-    $app->get('/logout',
+    $this->get('/logout',
         '\MartynBiz\Auth\Controller\SessionController:index')->setName('auth_session_logout');
 
-    $app->get('/register',
+    $this->get('/register',
         '\MartynBiz\Auth\Controller\UsersController:create')->setName('auth_users_create');
-    $app->post('/register',
+    $this->post('/register',
         '\MartynBiz\Auth\Controller\UsersController:post')->setName('auth_users_post');
-    $app->get('/resetpassword',
+    $this->get('/resetpassword',
         '\MartynBiz\Auth\Controller\UsersController:resetpassword')->setName('auth_users_reset_password');
-    $app->post('/resetpassword',
+    $this->post('/resetpassword',
         '\MartynBiz\Auth\Controller\UsersController:resetpassword')->setName('auth_users_reset_password_post');
 });
 
 // admin routes -- invokes auth middleware
-$app->group('/admin', function () use ($app, $container) {
+$app->group('/admin', function () {
 
     // admin/users routes
-    $app->group('/users', function () use ($app, $container) {
+    $this->group('/users', function () {
 
-        $app->get('',
+        $this->get('',
             '\MartynBiz\Auth\Controller\Admin\UsersController:index')->setName('admin_users');
-        $app->get('/{id:[0-9]+}',
+        $this->get('/{id:[0-9]+}',
             '\MartynBiz\Auth\Controller\Admin\UsersController:show')->setName('admin_users_show');
-        $app->get('/create',
+        $this->get('/create',
             '\MartynBiz\Auth\Controller\Admin\UsersController:create')->setName('admin_users_create');
-        $app->get('/{id:[0-9]+}/edit',
+        $this->get('/{id:[0-9]+}/edit',
             '\MartynBiz\Auth\Controller\Admin\UsersController:edit')->setName('admin_users_edit');
 
-        $app->put('/{id:[0-9]+}',
+        $this->put('/{id:[0-9]+}',
             '\MartynBiz\Auth\Controller\Admin\UsersController:update')->setName('admin_users_update');
-        $app->delete('/{id:[0-9]+}',
+        $this->delete('/{id:[0-9]+}',
             '\MartynBiz\Auth\Controller\Admin\UsersController:delete')->setName('admin_users_delete');
 
-    })->add( new \MartynBiz\Auth\Middleware\RoleAccess($container, [ \MartynBiz\Auth\Model\User::ROLE_ADMIN ]) );
+    })->add( new Middleware\RoleAccess($this->getContainer(), [ User::ROLE_ADMIN ]) );
 
-})->add( new \MartynBiz\Auth\Middleware\Auth( $container['auth'] ) );
+})->add( new Middleware\Auth( $container['auth'] ) );
