@@ -14,11 +14,11 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <?php /*foreach ($this->carouselPhotos as $i => $photo): ?>
+                <?php foreach ($this->carouselPhotos as $i => $photo): ?>
                     <div class="item<?php if ($i == 0): ?> active<?php endif; ?>">
                         <a href="#"><img src="/photos<?= $photo->getCachedPath('460x345') ?>" alt="Chania" width="460" height="345"></a>
                     </div>
-                <?php endforeach*/ ?>
+                <?php endforeach ?>
             </div>
 
             <!-- Left and right controls -->
@@ -46,7 +46,7 @@
 
     <div class="row">
         <div class="col-md-8">
-            <?php /*foreach ($this->articles as $article): ?>
+            <?php foreach ($this->articles as $article): ?>
                 <div class="homebox">
                     <?php if ($photo = $article->getCoverPhoto()): ?>
                         <div class="col-md-3 image">
@@ -59,16 +59,13 @@
                         <p class="small"><?= $this->translate('articles_written_by') ?></p>
                     </div>
                 </div>
-            <?php endforeach;*/ ?>
+            <?php endforeach; ?>
 
-            <?php /*
             <a href="<?= $this->pathFor('articles') ?>" class="btn btn-default">More articles</a>
-            */ ?>
         </div>
         <div class="col-md-4">
             <div class="homebox">
                 <div class="col-md-12 body">
-                    <?php /*
             		<form method="get" action="<?= $this->pathFor('articles') ?>">
                         <div class="input-group">
                             <input type="text" name="search" class="form-control" placeholder="Search for...">
@@ -77,7 +74,6 @@
                             </span>
                         </div>
             		</form>
-                    */ ?>
                 </div>
             </div>
 

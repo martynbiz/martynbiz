@@ -38,7 +38,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/app/App/",
-            "MartynBiz\\Auth\\": "src/martynbiz-auth/Auth/"
+            "MartynBiz\\Auth\\": "src/martynbiz-auth/Auth/",
+            "MartynBiz\\Blog\\": "src/martynbiz-blog/Blog/"
         }
     }
 }

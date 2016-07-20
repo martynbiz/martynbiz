@@ -19,7 +19,7 @@ class SessionController extends BaseController
     public function index($request, $response, $args)
     {
         // GET and POST
-        $params = array_merge($request->getQueryParams(), $request->getParams());
+        $params = $request->getParams(); //array_merge($request->getQueryParams(), $request->getParams());
         $container = $this->getContainer();
 
         // // check for remember me cookie.
