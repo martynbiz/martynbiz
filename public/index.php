@@ -27,7 +27,8 @@ session_start();
 // Instantiate the app
 
 // Compile app settings
-$settings = require APPLICATION_PATH . '/src/settings.php';
+// $settings = require APPLICATION_PATH . '/src/settings.php';
+$settings = [];
 if ($path = realpath(APPLICATION_PATH . '/src/settings.' . APPLICATION_ENV . '.php')) {
     $settings = array_merge_recursive($settings, require $path);
 }
@@ -46,8 +47,8 @@ $app = new \Slim\App($settings);
 // ==================================
 // Set up dependencies
 
-// Load app dependencies
-require APPLICATION_PATH . '/src/dependencies.php';
+// // Load app dependencies
+// require APPLICATION_PATH . '/src/dependencies.php';
 
 // Load module dependencies
 foreach ($modulePaths as $modulePath) {
@@ -59,8 +60,8 @@ foreach ($modulePaths as $modulePath) {
 // ==================================
 // Register middleware
 
-// Load app middleware
-require APPLICATION_PATH . '/src/middleware.php';
+// // Load app middleware
+// require APPLICATION_PATH . '/src/middleware.php';
 
 // Load module middleware
 foreach ($modulePaths as $modulePath) {
@@ -72,8 +73,8 @@ foreach ($modulePaths as $modulePath) {
 // ==================================
 // Register routes
 
-// Load app routes
-require APPLICATION_PATH . '/src/routes.php';
+// // Load app routes
+// require APPLICATION_PATH . '/src/routes.php';
 
 // Load module routes
 foreach ($modulePaths as $modulePath) {
