@@ -571,7 +571,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-auth.git",
-                "reference": "16038b3d7bc1d0402ecadb5d2d710f04a445d5e3"
+                "reference": "28ffd7726d732bd39f27e109623b851ac90acdf3"
             },
             "require": {
                 "martynbiz/slim-module-auth": "dev-master",
@@ -601,7 +601,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-21 14:01:31"
+            "time": "2016-07-21 14:16:27"
         },
         {
             "name": "martynbiz/slim-module-blog",
@@ -609,10 +609,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-blog.git",
-                "reference": "c7b60ab0cf147c6e3b402c1f9d05dfab6144b9a1"
+                "reference": "15fbf06b2108bfbafe26b0ae2e629590fa375285"
             },
             "require": {
-                "martynbiz/slim-module-blog": "dev-master",
+                "martynbiz/slim-module-auth": "dev-master",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -639,7 +639,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-21 14:01:49"
+            "time": "2016-07-21 14:16:05"
         },
         {
             "name": "martynbiz/slim-module-core",
@@ -647,7 +647,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "6b4d2ab936cf44b96d64026c332008f807074fd6"
+                "reference": "79ec5c2fe03c6f3e99b4cc1ab142c51c510f1866"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -691,7 +691,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-21 14:01:05"
+            "time": "2016-07-21 14:16:50"
         },
         {
             "name": "monolog/monolog",
