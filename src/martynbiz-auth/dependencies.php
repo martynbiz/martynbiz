@@ -5,11 +5,11 @@ $container = $app->getContainer();
 
 // Models
 $container['auth.model.user'] = function ($c) {
-    return new MartynBiz\Auth\Model\User();
+    return new MartynBiz\Slim\Modules\Auth\Model\User();
 };
 
 $container['auth'] = function ($c) {
     $settings = $c->get('settings')['auth'];
-    $authAdapter = new MartynBiz\Auth\Adapter\Mongo( $c['auth.model.user'] );
-    return new MartynBiz\Auth\Auth($authAdapter, $settings);
+    $authAdapter = new MartynBiz\Slim\Modules\Auth\Adapter\Mongo( $c['auth.model.user'] );
+    return new MartynBiz\Slim\Modules\Auth\Auth($authAdapter, $settings);
 };

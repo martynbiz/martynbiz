@@ -40,7 +40,7 @@ return [
 
         'mongo' => [
             'classmap' => [
-                'users' => '\\Auth\\Model\\User',
+                'users' => '\\MartynBiz\\Slim\\Modules\\Auth\\Model\\User',
             ],
         ],
     ],

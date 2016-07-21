@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "072ec53778032660859b5e68f228ed97",
-    "content-hash": "d151c3739882857378a0bbc7ab97815c",
+    "hash": "d9c03c5135c056ad84215f6b7d5a0f9e",
+    "content-hash": "5cbdb4932f3dcab8640eeed9a8ae82cc",
     "packages": [
         {
             "name": "aura/html",
@@ -476,8 +476,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/martynbiz/php-mongo",
+                "url": "https://github.com/martynbiz/php-mongo.git",
                 "reference": "34461b1365b52fceb64bf54188b2da9559da60ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/martynbiz/php-mongo/zipball/34461b1365b52fceb64bf54188b2da9559da60ea",
+                "reference": "34461b1365b52fceb64bf54188b2da9559da60ea",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -494,6 +500,7 @@
                     "tests"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -557,6 +564,134 @@
                 "validation"
             ],
             "time": "2016-05-31 15:20:15"
+        },
+        {
+            "name": "martynbiz/slim-module-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martynbiz/slim-module-auth.git",
+                "reference": "16038b3d7bc1d0402ecadb5d2d710f04a445d5e3"
+            },
+            "require": {
+                "martynbiz/slim-module-auth": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MartynBiz\\Slim\\Modules\\Auth\\": "Auth/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martyn Bissett",
+                    "email": "martynbissett@yahoo.co.uk",
+                    "homepage": "http://martyn.biz",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "modules",
+                "slim"
+            ],
+            "time": "2016-07-21 14:01:31"
+        },
+        {
+            "name": "martynbiz/slim-module-blog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martynbiz/slim-module-blog.git",
+                "reference": "c7b60ab0cf147c6e3b402c1f9d05dfab6144b9a1"
+            },
+            "require": {
+                "martynbiz/slim-module-blog": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MartynBiz\\Slim\\Modules\\Blog\\": "Blog/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martyn Bissett",
+                    "email": "martynbissett@yahoo.co.uk",
+                    "homepage": "http://martyn.biz",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "modules",
+                "slim"
+            ],
+            "time": "2016-07-21 14:01:49"
+        },
+        {
+            "name": "martynbiz/slim-module-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martynbiz/slim-module-core.git",
+                "reference": "6b4d2ab936cf44b96d64026c332008f807074fd6"
+            },
+            "require": {
+                "aura/session": "^2.0",
+                "desarrolla2/cache": "^2.1",
+                "facebook/php-sdk-v4": "^5.1",
+                "foil/foil": "0.*",
+                "martynbiz/php-flash-message": "dev-master",
+                "martynbiz/php-mongo": "dev-master",
+                "martynbiz/php-validator": "dev-master",
+                "monolog/monolog": "^1.19",
+                "php": ">=5.3.0",
+                "predis/predis": "^1.0",
+                "slim/csrf": "^0.6.0",
+                "zendframework/zend-cache": "^2.7",
+                "zendframework/zend-i18n": "^2.6",
+                "zendframework/zend-mail": "^2.5",
+                "zendframework/zend-servicemanager": "^2.0"
+            },
+            "require-dev": {
+                "martynbiz/php-translate-tool": "dev-master",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MartynBiz\\Slim\\Modules\\Core\\": "Core/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martyn Bissett",
+                    "email": "martynbissett@yahoo.co.uk",
+                    "homepage": "http://martyn.biz",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "modules",
+                "slim"
+            ],
+            "time": "2016-07-21 14:01:05"
         },
         {
             "name": "monolog/monolog",
@@ -1598,48 +1733,6 @@
             "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "martynbiz/php-translate-tool",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/martynbiz/php-translate-tool.git",
-                "reference": "96fb7709a969a3a18cca50459d3b3898858f3563"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.3.*"
-            },
-            "bin": [
-                "bin/translatetool"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MartynBiz\\Translate\\": "src/"
-                },
-                "classmap": [
-                    "tests/"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Martyn Bissett",
-                    "email": "martynbissett@yahoo.co.uk"
-                }
-            ],
-            "description": "A CLI tool for managing translation files and syncing entries with view files. Allows translations to be synced with views, get/set values, and list empty values.",
-            "homepage": "http://github.com/martynbiz/cattlog",
-            "keywords": [
-                "languages",
-                "multi-language",
-                "multilanguage",
-                "translations"
-            ],
-            "time": "2016-06-14 05:26:58"
-        },
-        {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0",
             "source": {
@@ -2092,16 +2185,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.26",
+            "version": "4.8.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fc1d8cd5b5de11625979125c5639347896ac2c74"
+                "reference": "c062dddcb68e44b563f66ee319ddae2b5a322a90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fc1d8cd5b5de11625979125c5639347896ac2c74",
-                "reference": "fc1d8cd5b5de11625979125c5639347896ac2c74",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c062dddcb68e44b563f66ee319ddae2b5a322a90",
+                "reference": "c062dddcb68e44b563f66ee319ddae2b5a322a90",
                 "shasum": ""
             },
             "require": {
@@ -2160,7 +2253,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-05-17 03:09:28"
+            "time": "2016-07-21 06:48:14"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2692,10 +2785,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "martynbiz/php-mongo": 20,
-        "martynbiz/php-validator": 20,
-        "martynbiz/php-flash-message": 20,
-        "martynbiz/php-translate-tool": 20
+        "martynbiz/slim-module-core": 20,
+        "martynbiz/slim-module-auth": 20,
+        "martynbiz/slim-module-blog": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
