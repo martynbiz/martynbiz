@@ -1,3 +1,19 @@
+# Slim Modules Skeleton #
+
+## Installation ##
+
+```
+$ composer create-project martynbiz/slim-module-skeleton myproject
+```
+
+## Install modules ##
+
+```
+$ composer require martynbiz/slim-module-auth
+$ composer require martynbiz/slim-module-blog
+```
+
+
 TODO
 
 create helper function: MartynBiz\Utils\array_merge_settings
