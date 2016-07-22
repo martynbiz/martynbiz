@@ -2,11 +2,11 @@
 return [
     'settings' => [
 
-        'renderer' => [
-            'folders' => [
-                APPLICATION_PATH . '/src/martynbiz-blog/templates',
-            ],
-        ],
+        // 'renderer' => [
+        //     'folders' => [
+        //         APPLICATION_PATH . '/src/martynbiz-blog/templates',
+        //     ],
+        // ],
 
         'photos_dir' => [
             'original' => APPLICATION_PATH . '/data/photos',

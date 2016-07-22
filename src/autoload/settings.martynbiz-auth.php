@@ -2,12 +2,12 @@
 return [
     'settings' => [
 
-        // Renderer settings
-        'renderer' => [
-            'folders' => [
-                APPLICATION_PATH . '/src/martynbiz-auth/templates',
-            ],
-        ],
+        // // Renderer settings
+        // 'renderer' => [
+        //     'folders' => [
+        //         APPLICATION_PATH . '/src/martynbiz-auth/templates',
+        //     ],
+        // ],
 
         'auth' => [
 
