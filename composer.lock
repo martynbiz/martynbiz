@@ -571,7 +571,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-auth.git",
-                "reference": "8232302ae70a1e1d3a934b27e6aa816198f823d9"
+                "reference": "148635542c2d170b1b60e33c19cfa4d45fef3feb"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -600,7 +600,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 13:29:43"
+            "time": "2016-07-22 13:37:33"
         },
         {
             "name": "martynbiz/slim-module-blog",
@@ -608,7 +608,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-blog.git",
-                "reference": "f2132d9961289e723f7a4d8574f6fa7114e52545"
+                "reference": "c37da1a19655297b7e05061a17c721f1c625b425"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -637,7 +637,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 13:30:45"
+            "time": "2016-07-22 13:37:49"
         },
         {
             "name": "martynbiz/slim-module-core",
@@ -645,7 +645,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "1e8e058560ebc3fca5295585dc60ebff2511c513"
+                "reference": "daabb549e455ef5938fb075f317914232ace3cc0"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -689,7 +689,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 13:30:24"
+            "time": "2016-07-22 13:37:12"
         },
         {
             "name": "martynbiz/slim-module-initializer",
