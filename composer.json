@@ -4,6 +4,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
+        {
+            "url": "https://github.com/martynbiz/slim-module-initializer.git",
+            "type": "git"
+        },
 	    {
             "url": "https://github.com/martynbiz/slim-module-core.git",
             "type": "git"
@@ -20,7 +24,8 @@
     "require": {
         "php": ">=5.5.0",
         "slim/slim": "^3.1",
-        "martynbiz/slim-module-core": "dev-master",
+        "martynbiz/slim-module-initializer": "dev-master",
+        "martynbiz/slim-module-core": "dev-feature-module-class",
         "martynbiz/slim-module-auth": "dev-master",
         "martynbiz/slim-module-blog": "dev-master"
     },
