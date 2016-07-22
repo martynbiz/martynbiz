@@ -6,9 +6,9 @@ $appSettings = [
         'autoload_dir' => APPLICATION_PATH . '/src/autoload/',
         'module_initializer' => [
             'modules' => [
-                'martynbiz-core' => 'MartynBiz\\Slim\\Modules\\Core\\Module',
-                'martynbiz-auth' => 'MartynBiz\\Slim\\Modules\\Auth\\Module',
-                'martynbiz-blog' => 'MartynBiz\\Slim\\Modules\\Blog\\Module',
+                'martynbiz-core' => 'MartynBiz\\Slim\\Module\\Core\\Module',
+                'martynbiz-auth' => 'MartynBiz\\Slim\\Module\\Auth\\Module',
+                'martynbiz-blog' => 'MartynBiz\\Slim\\Module\\Blog\\Module',
             ],
         ],
     ],

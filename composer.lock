@@ -571,7 +571,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-auth.git",
-                "reference": "f69a835ff642547e9387aad9e2cfc992e31b3253"
+                "reference": "8232302ae70a1e1d3a934b27e6aa816198f823d9"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -582,7 +582,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "MartynBiz\\Slim\\Modules\\Auth\\": "src/"
+                    "MartynBiz\\Slim\\Module\\Auth\\": "src/"
                 }
             },
             "license": [
@@ -600,7 +600,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 13:05:40"
+            "time": "2016-07-22 13:29:43"
         },
         {
             "name": "martynbiz/slim-module-blog",
@@ -608,7 +608,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-blog.git",
-                "reference": "e2e4a8e2382ba128fa2287380b05ce2990cde036"
+                "reference": "f2132d9961289e723f7a4d8574f6fa7114e52545"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -619,7 +619,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "MartynBiz\\Slim\\Modules\\Blog\\": "src/"
+                    "MartynBiz\\Slim\\Module\\Blog\\": "src/"
                 }
             },
             "license": [
@@ -637,7 +637,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 12:55:56"
+            "time": "2016-07-22 13:30:45"
         },
         {
             "name": "martynbiz/slim-module-core",
@@ -645,7 +645,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "0e01c6abcccd5bd76fa1b074e36cc078475368a0"
+                "reference": "1e8e058560ebc3fca5295585dc60ebff2511c513"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -671,7 +671,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "MartynBiz\\Slim\\Modules\\Core\\": "src/"
+                    "MartynBiz\\Slim\\Module\\Core\\": "src/"
                 }
             },
             "license": [
@@ -689,7 +689,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 12:50:34"
+            "time": "2016-07-22 13:30:24"
         },
         {
             "name": "martynbiz/slim-module-initializer",
