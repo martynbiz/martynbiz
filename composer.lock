@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e8e66f5990f44c7b1b6b173749639359",
-    "content-hash": "c7b3ca6f6ddb7b2eb12fa33e26ff7de0",
+    "hash": "6689058a28a4601a9d3aa215ee7b887f",
+    "content-hash": "cde1919accd56f7def43eef9abfa4daf",
     "packages": [
         {
             "name": "aura/html",
@@ -571,10 +571,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-auth.git",
-                "reference": "28ffd7726d732bd39f27e109623b851ac90acdf3"
+                "reference": "8ef6bb573caf984ebfc6dd200d3cdfdda68fcad1"
             },
             "require": {
-                "martynbiz/slim-module-auth": "dev-master",
+                "martynbiz/slim-module-core": "dev-master",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -601,7 +601,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-21 14:16:27"
+            "time": "2016-07-22 08:52:31"
         },
         {
             "name": "martynbiz/slim-module-blog",
@@ -609,7 +609,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-blog.git",
-                "reference": "15fbf06b2108bfbafe26b0ae2e629590fa375285"
+                "reference": "3e345c1fcafb7876bf656bd0373a2313e680a99b"
             },
             "require": {
                 "martynbiz/slim-module-auth": "dev-master",
@@ -639,15 +639,15 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-21 14:16:05"
+            "time": "2016-07-22 08:44:07"
         },
         {
             "name": "martynbiz/slim-module-core",
-            "version": "dev-feature-module-class",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "8546070168897f329398e868c910e7525d684dfb"
+                "reference": "9d8582429e376e2955ab0872d6cc27c284448ce9"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -691,7 +691,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-22 06:53:13"
+            "time": "2016-07-22 08:39:49"
         },
         {
             "name": "martynbiz/slim-module-initializer",
@@ -699,7 +699,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-initializer.git",
-                "reference": "cf03e7ee7bee42cb92ca849d5b61a67628cfd990"
+                "reference": "d70754939235ddd3e1bf3bcaa3dd3f59d52c8aad"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -729,7 +729,7 @@
                 "module",
                 "slim"
             ],
-            "time": "2016-07-22 06:54:33"
+            "time": "2016-07-22 08:58:26"
         },
         {
             "name": "monolog/monolog",
@@ -2824,8 +2824,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "martynbiz/slim-module-initializer": 20,
-        "martynbiz/slim-module-core": 20,
-        "martynbiz/slim-module-auth": 20,
         "martynbiz/slim-module-blog": 20
     },
     "prefer-stable": true,
