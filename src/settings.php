@@ -7,8 +7,8 @@ $appSettings = [
         'module_initializer' => [
             'modules' => [
                 'martynbiz-core' => 'MartynBiz\\Slim\\Modules\\Core\\Module',
-                // 'martynbiz-auth' => 'MartynBiz\\Slim\\Modules\\Auth\\Module',
-                // 'martynbiz-blog' => 'MartynBiz\\Slim\\Modules\\Blog\\Module',
+                'martynbiz-auth' => 'MartynBiz\\Slim\\Modules\\Auth\\Module',
+                'martynbiz-blog' => 'MartynBiz\\Slim\\Modules\\Blog\\Module',
             ],
         ],
     ],
@@ -16,9 +16,9 @@ $appSettings = [
 
 // Module Settings
 $moduleSettings = [];
-foreach ($appSettings['settings']['module_initializer'] as $moduleName => $moduleClassName) {
-    if ($path = realpath($appSettings['settings']['module_dir'] . $moduleName . '/settings.php')) {
-        $moduleSettings = require $path;
+foreach ($appSettings['settings']['module_initializer']['modules'] as $moduleName => $moduleClassName) {
+	if ($path = realpath($appSettings['settings']['module_dir'] . $moduleName . '/settings.php')) {
+        $moduleSettings = array_merge_recursive($moduleSettings, require $path);
     }
 }
 
