@@ -18,11 +18,12 @@ $appSettings = [
 $moduleSettings = [];
 foreach ($appSettings['settings']['module_initializer'] as $moduleName => $moduleClassName) {
     if ($path = realpath($appSettings['settings']['module_dir'] . $moduleName . '/settings.php')) {
-        $moduleSettings = array_merge_recursive($moduleSettings, require $path);
+        $moduleSettings = require $path;
     }
 }
 
 // Environment settings
+$envSettings = [];
 if ($path = realpath(APPLICATION_PATH . '/src/settings.' . APPLICATION_ENV . '.php')) {
     $envSettings = require $path;
 }

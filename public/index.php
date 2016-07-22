@@ -27,6 +27,7 @@ session_start();
 
 // Instantiate the app
 $settings = require APPLICATION_PATH . '/src/settings.php';
+
 $app = new Slim\App($settings);
 
 // initialize all modules in settings > modules > autoload [...]
