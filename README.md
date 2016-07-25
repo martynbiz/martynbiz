@@ -13,10 +13,42 @@ $ composer require martynbiz/slim-module-auth
 $ composer require martynbiz/slim-module-blog
 ```
 
+Slim-module
+separate folders (e.g. /templates, /src)
+* more consistent with slim skeleton
+* easier to find templates
+* only one template folder required (less searching)
+
+
+
 
 TODO
 
-create helper function: MartynBiz\Utils\array_merge_settings
+auth app middleware - this middleware attaches the currentUser to the renderer's data,
+other modules don't extend from auth's base controller
+
+Create skeleton app - does it run stand alone?
+Install auth module - does it run with only core
+Install blog module - does it run with only core and auth
+
+require core in auth module
+require core, auth in blog
+
+
+Cli
+
+"post-install-cmd": [
+    "php cli.phar modules:install"
+]
+
+php cli.phar modules:install martynbiz-blog (copy files from /vendor)
+php cli.phar modules:remove martynbiz-blog
+
+
+qa module
+slim-module-staticpages (alias? e.g. /portfolio -> /pages/portfolio)
+slim-module-contactform (ContactController)
+
 
 Why is this appearing when running the app? Try removing phpunit and trace it
 Fatal error: Class 'PHPUnit_Framework_TestCase' not found in /var/www/martynbiz/vendor/martynbiz/php-mongo/tests/MongoIteratorTest.php on line 26
