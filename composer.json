@@ -9,6 +9,14 @@
             "type": "git"
         },
 	    {
+            "url": "https://github.com/martynbiz/slim-module-core.git",
+            "type": "git"
+        },
+	    {
+            "url": "https://github.com/martynbiz/slim-module-auth.git",
+            "type": "git"
+        },
+	    {
             "url": "https://github.com/martynbiz/slim-module-blog.git",
             "type": "git"
         },
@@ -32,7 +40,11 @@
         }
     },
     "scripts": {
-        "post-install-cmd": ["php cli.phar modules:install"],
-        "post-update-cmd": ["php cli.phar modules:install"],
+        "post-install-cmd": [
+            "php cli.php modules:install"
+        ],
+        "post-update-cmd": [
+            "php cli.php modules:install"
+        ]
     }
 }

@@ -8,9 +8,27 @@ $ composer create-project martynbiz/slim-module-skeleton myproject
 
 ## Install modules ##
 
+Load files with composer
+
 ```
 $ composer require martynbiz/slim-module-auth
 $ composer require martynbiz/slim-module-blog
+```
+
+Enable modules in settings.php
+
+```
+return [
+    'settings' => [
+        ...
+        'module_initializer' => [
+            'modules' => [
+                'martynbiz-core' => 'MartynBiz\\Slim\\Module\\Core\\Module',
+                'martynbiz-auth' => 'MartynBiz\\Slim\\Module\\Auth\\Module',
+            ],
+        ],
+    ],
+];
 ```
 
 Slim-module
@@ -33,12 +51,7 @@ documentation
 
 auth
 
-Cli
 
-
-
-php cli.phar modules:install martynbiz-blog (copy files from /vendor)
-php cli.phar modules:remove martynbiz-blog
 
 
 qa module
