@@ -24,43 +24,24 @@ separate folders (e.g. /templates, /src)
 
 TODO
 
+delete old repos
+documentation
+  core - pagination Traits,
+  auth - $c['auth.current_user']
+
+
+
 auth
-
-auth app middleware - this middleware attaches the currentUser to the renderer's data,
-other modules don't extend from auth's base controller
-
-Create skeleton app - does it run stand alone?
-Install auth module - does it run with only core
-Install blog module - does it run with only core and auth
-
-require core in auth module
-require core, auth in blog
-
-
-slim-module-staticpages
-
-$staticRoutePrefix = '/pages';
-
-$app->get($staticRoutePrefix . '/portfolio', function($request, $response, $args) {
-    $request->setUrl( $c->get('router')->pathFor('static_page', ['file' => 'portfolio']) );
-    return $route->run($request, $response);
-});
-
-$aliasBuilder('/portfolio', 'static_page', ['file' => 'portfolio']);
-
 
 Cli
 
-"post-install-cmd": [
-    "php cli.phar modules:install"
-]
+
 
 php cli.phar modules:install martynbiz-blog (copy files from /vendor)
 php cli.phar modules:remove martynbiz-blog
 
 
 qa module
-slim-module-staticpages (alias? e.g. /portfolio -> /pages/portfolio)
 slim-module-contactform (ContactController)
 
 
