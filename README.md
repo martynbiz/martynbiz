@@ -24,6 +24,8 @@ separate folders (e.g. /templates, /src)
 
 TODO
 
+auth
+
 auth app middleware - this middleware attaches the currentUser to the renderer's data,
 other modules don't extend from auth's base controller
 
@@ -33,6 +35,18 @@ Install blog module - does it run with only core and auth
 
 require core in auth module
 require core, auth in blog
+
+
+slim-module-staticpages
+
+$staticRoutePrefix = '/pages';
+
+$app->get($staticRoutePrefix . '/portfolio', function($request, $response, $args) {
+    $request->setUrl( $c->get('router')->pathFor('static_page', ['file' => 'portfolio']) );
+    return $route->run($request, $response);
+});
+
+$aliasBuilder('/portfolio', 'static_page', ['file' => 'portfolio']);
 
 
 Cli
