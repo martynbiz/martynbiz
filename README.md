@@ -1,35 +1,24 @@
-# Slim Modules Skeleton #
+# My Homepage #
+
+This is a Slim 3 application. In addition, it uses martynbiz/slim-module library
+to manage modules.
 
 ## Installation ##
 
 ```
-$ composer create-project martynbiz/slim-module-skeleton myproject
+$ composer create-project martynbiz/martynbiz
+$ cd martynbiz
+$ php -S localhost:8080 -t public/
 ```
 
-## Install modules ##
+Note: some features (e.g. file uploads) will not run in PHP's built in server
+and will require a virtual host.
 
-Load files with composer
 
-```
-$ composer require martynbiz/slim-module-auth
-$ composer require martynbiz/slim-module-blog
-```
 
-Enable modules in settings.php
 
-```
-return [
-    'settings' => [
-        ...
-        'module_initializer' => [
-            'modules' => [
-                'martynbiz-core' => 'MartynBiz\\Slim\\Module\\Core\\Module',
-                'martynbiz-auth' => 'MartynBiz\\Slim\\Module\\Auth\\Module',
-            ],
-        ],
-    ],
-];
-```
+TODO
+
 
 Slim-module
 separate folders (e.g. /templates, /src)
@@ -39,8 +28,6 @@ separate folders (e.g. /templates, /src)
 
 
 
-
-TODO
 
 delete old repos
 documentation
