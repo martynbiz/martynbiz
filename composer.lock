@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fb6f8b0adb0bcb7dfcc537276cede2e8",
+    "hash": "8ac3c7f9a27b28ff3cc996a5dad62f5c",
     "content-hash": "c4939c896e2d6d0334d86a37ccdc9ea6",
     "packages": [
         {
@@ -642,7 +642,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-auth.git",
-                "reference": "78d6b0a79023dfbc1b0228976ce47351caee668c"
+                "reference": "10982c0c03178e41a0dfa759ff4e8f70ff38f089"
             },
             "require": {
                 "martynbiz/slim-module": "dev-master",
@@ -673,7 +673,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-25 15:49:43"
+            "time": "2016-07-26 00:19:42"
         },
         {
             "name": "martynbiz/slim-module-blog",
@@ -681,7 +681,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-blog.git",
-                "reference": "e18fe00b9bc4e86183c235fd6fccd2dfd2a7bcba"
+                "reference": "c0bab4fadf6e54ad27fbc73dd9713d483c711d84"
             },
             "require": {
                 "martynbiz/slim-module": "dev-master",
@@ -713,7 +713,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-25 15:50:09"
+            "time": "2016-07-26 00:19:03"
         },
         {
             "name": "martynbiz/slim-module-core",
@@ -721,7 +721,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "c6b9a2eb2c5ce69dd7c093c0af20b028ec8e2c18"
+                "reference": "ff75ade324de5458e87ef36233e79503a73cb471"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -766,7 +766,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-25 15:49:10"
+            "time": "2016-07-26 00:19:27"
         },
         {
             "name": "monolog/monolog",

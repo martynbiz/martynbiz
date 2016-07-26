@@ -19,6 +19,11 @@ and will require a virtual host.
 
 TODO
 
+build a japantravel port with slim-module-blog
+* static files
+* prefecture, categories, subcategories, etc
+* news, photostory, video,
+
 
 Slim-module
 separate folders (e.g. /templates, /src)
