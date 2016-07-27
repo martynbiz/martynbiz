@@ -31,6 +31,18 @@ separate folders (e.g. /templates, /src)
 * easier to find templates
 * only one template folder required (less searching)
 
+modules/name
+* app module currently has three dirs (in /src/autoload/; /App; templates/)
+* simpler settings naming: modules/martynbiz-blog/settings.php
+* everything is actually modular, root has only three repo dirs (assets, public, src)
+* (use folder IDs? e.g. martynbiz-blog::articles/index)
+* if we extend Module, it's in it's correct location
+* language can go back in module dir
+
+modules/martynbiz-blog/
+  templates
+  settings.php
+
 
 
 

@@ -35,6 +35,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function() {
+
     // prepare the coffeescript files
     gulp.src('assets/coffee/*.coffee')
         .pipe(sourcemaps.init())
