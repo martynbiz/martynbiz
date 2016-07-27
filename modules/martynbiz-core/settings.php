@@ -27,7 +27,7 @@ return [
             'type' => 'phparray',
 
             // where the translation files are stored
-            'file_path' => APPLICATION_PATH . '/assets/language/',
+            'file_path' => APPLICATION_PATH . '/modules/martynbiz-core/language/',
         ],
 
         'mail' => [

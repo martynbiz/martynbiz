@@ -721,7 +721,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "a9981931630e25618b264ada86a900c906f50cc0"
+                "reference": "cc44d79ea67dd3f56a884937a32346f07cb4d936"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -766,7 +766,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-27 10:41:06"
+            "time": "2016-07-27 12:39:29"
         },
         {
             "name": "monolog/monolog",
