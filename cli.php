@@ -11,13 +11,13 @@ switch ($argv[1]) {
             $moduleClassName = $modules[$moduleToInstall];
             $module = new $moduleClassName();
             if (method_exists($module, 'copyFiles')) {
-                $module->copyFiles(__DIR__);
+                $module->copyFiles($settings['settings']['modules_dir']);
             }
         } else {
             foreach($modules as $name => $moduleClassName) {
                 $module = new $moduleClassName();
                 if (method_exists($module, 'copyFiles')) {
-                    $module->copyFiles(__DIR__);
+                    $module->copyFiles($settings['settings']['modules_dir']);
                 }
             }
         }
@@ -28,13 +28,13 @@ switch ($argv[1]) {
             $moduleClassName = $modules[$moduleToRemove];
             $module = new $moduleClassName();
             if (method_exists($module, 'removeFiles')) {
-                $module->removeFiles(__DIR__);
+                $module->removeFiles($settings['settings']['modules_dir']);
             }
         } else {
             foreach($modules as $name => $moduleClassName) {
                 $module = new $moduleClassName();
                 if (method_exists($module, 'removeFiles')) {
-                    $module->removeFiles(__DIR__);
+                    $module->removeFiles($settings['settings']['modules_dir']);
                 }
             }
         }

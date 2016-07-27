@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ac3c7f9a27b28ff3cc996a5dad62f5c",
+    "hash": "b0a2dde04349c68c486816c31874784b",
     "content-hash": "c4939c896e2d6d0334d86a37ccdc9ea6",
     "packages": [
         {
@@ -642,7 +642,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-auth.git",
-                "reference": "10982c0c03178e41a0dfa759ff4e8f70ff38f089"
+                "reference": "7528a4967e31257d88ae5d8f341883017d8b1b85"
             },
             "require": {
                 "martynbiz/slim-module": "dev-master",
@@ -673,7 +673,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-26 00:19:42"
+            "time": "2016-07-27 09:56:32"
         },
         {
             "name": "martynbiz/slim-module-blog",
@@ -681,7 +681,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-blog.git",
-                "reference": "c0bab4fadf6e54ad27fbc73dd9713d483c711d84"
+                "reference": "ac5d3b071ca9ea390efebe0e76dc4787d79eae98"
             },
             "require": {
                 "martynbiz/slim-module": "dev-master",
@@ -713,7 +713,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-26 00:19:03"
+            "time": "2016-07-27 09:57:05"
         },
         {
             "name": "martynbiz/slim-module-core",
@@ -721,7 +721,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "ff75ade324de5458e87ef36233e79503a73cb471"
+                "reference": "421fd81a8228754accbe4e065da06639d454dcc3"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -766,7 +766,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-26 00:19:27"
+            "time": "2016-07-27 09:54:12"
         },
         {
             "name": "monolog/monolog",
@@ -1172,16 +1172,16 @@
         },
         {
             "name": "slim/slim",
-            "version": "3.4.2",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim.git",
-                "reference": "a132385f736063d00632b52b3f8a389fe66fe4fa"
+                "reference": "184352bc1913d7ba552ab4131d62f4730ddb0893"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/a132385f736063d00632b52b3f8a389fe66fe4fa",
-                "reference": "a132385f736063d00632b52b3f8a389fe66fe4fa",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/184352bc1913d7ba552ab4131d62f4730ddb0893",
+                "reference": "184352bc1913d7ba552ab4131d62f4730ddb0893",
                 "shasum": ""
             },
             "require": {
@@ -1238,7 +1238,7 @@
                 "micro",
                 "router"
             ],
-            "time": "2016-05-25 11:23:38"
+            "time": "2016-07-26 15:12:13"
         },
         {
             "name": "zendframework/zend-cache",

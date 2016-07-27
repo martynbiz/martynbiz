@@ -18,6 +18,6 @@ class IndexController extends BaseController
         ], [ 'limit' => 5 ]);
 
 
-        $this->render('app/index/index', compact('articles', 'carouselPhotos'));
+        $this->render('app::index/index', compact('articles', 'carouselPhotos'));
     }
 }
