@@ -24,7 +24,7 @@ if (PHP_SAPI == 'cli-server') {
 $classLoader = require __DIR__ . '/../vendor/autoload.php';
 
 // App settings
-$appSettings = require APPLICATION_PATH . '/src/settings.php';
+$appSettings = require APPLICATION_PATH . '/modules/settings.php';
 
 // Module settings (autoload)
 $moduleSettings = [];
@@ -36,7 +36,7 @@ foreach (array_keys($appSettings['settings']['module_initializer']['modules']) a
 
 // Environment settings
 $envSettings = [];
-if ($path = realpath(APPLICATION_PATH . '/src/settings.' . APPLICATION_ENV . '.php')) {
+if ($path = realpath(APPLICATION_PATH . '/modules/settings.' . APPLICATION_ENV . '.php')) {
     $envSettings = require $path;
 }
 

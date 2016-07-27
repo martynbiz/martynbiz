@@ -5,10 +5,10 @@ return [
         // Renderer settings
         'renderer' => [
             'folders' => [
-                'martynbiz-blog' => APPLICATION_PATH . '/src/martynbiz-blog/templates',
+                APPLICATION_PATH . '/modules/martynbiz-blog/templates',
             ],
         ],
-        
+
         'photos_dir' => [
             'original' => APPLICATION_PATH . '/data/photos',
             'cache' => APPLICATION_PATH . '/data/photos/cache',

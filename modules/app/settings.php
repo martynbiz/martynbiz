@@ -5,7 +5,7 @@ return [
         // Renderer settings
         'renderer' => [
             'folders' => [
-                'app' => APPLICATION_PATH . '/src/app/templates',
+                'app' => APPLICATION_PATH . '/modules/app/templates',
             ],
         ],
     ],
