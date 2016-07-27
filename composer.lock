@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "98ffd2a4b5de293701f359535af47103",
+    "hash": "6e20a61f88d10830c33a14205f2307db",
     "content-hash": "5971088ee7bc7c5bc2da2d16d35ec31f",
     "packages": [
         {
@@ -609,7 +609,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "cc44d79ea67dd3f56a884937a32346f07cb4d936"
+                "reference": "3b03d3b658255b307cdf742d578b19aa3521db4b"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -654,7 +654,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-27 12:39:29"
+            "time": "2016-07-27 13:30:15"
         },
         {
             "name": "monolog/monolog",
