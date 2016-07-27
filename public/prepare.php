@@ -28,11 +28,10 @@ $appSettings = require APPLICATION_PATH . '/src/settings.php';
 
 // Module settings (autoload)
 $moduleSettings = [];
-foreach (scandir($appSettings['settings']['autoload_dir']) as $file) {
-    if ('.' === $file) continue;
-    if ('..' === $file) continue;
-
-    $moduleSettings = array_merge_recursive($moduleSettings, require $appSettings['settings']['autoload_dir'] . $file);
+foreach (array_keys($appSettings['settings']['module_initializer']['modules']) as $dir) {
+    if ($path = realpath($appSettings['settings']['modules_dir'] . $dir . '/settings.php')) {
+        $moduleSettings = array_merge_recursive($moduleSettings, require $path);
+    }
 }
 
 // Environment settings

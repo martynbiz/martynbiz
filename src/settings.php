@@ -2,7 +2,7 @@
 
 return [
     'settings' => [
-        'autoload_dir' => APPLICATION_PATH . '/src/autoload/',
+        'modules_dir' => APPLICATION_PATH . '/src/',
         'module_initializer' => [
             'modules' => [
                 'martynbiz-core' => 'MartynBiz\\Slim\\Module\\Core\\Module',

@@ -19,13 +19,23 @@ and will require a virtual host.
 
 TODO
 
+move modules to module dirs
+* copyFiles - cp -rn modules/martynbiz-auth
+* removeFiles - rm -rf modules/martynbiz-auth
+* add folders to Foil
+
 build a japantravel port with slim-module-blog
+* build homepage
 * static files
 * prefecture, categories, subcategories, etc
 * news, photostory, video,
 
 
-Slim-module
+
+
+
+Slim-module debate:
+
 separate folders (e.g. /templates, /src)
 * more consistent with slim skeleton
 * easier to find templates
@@ -38,6 +48,8 @@ modules/name
 * (use folder IDs? e.g. martynbiz-blog::articles/index)
 * if we extend Module, it's in it's correct location
 * language can go back in module dir
+* copy/remove modules is much simpler
+
 
 modules/martynbiz-blog/
   templates
