@@ -28,18 +28,18 @@ class Module implements ModuleInterface
      */
     public function initRoutes(App $app)
     {
-        $app->get('/hello', function($request, $response, $args) {
-            $html = $this->get('renderer')->render('hello');
-            $response->getBody()->write($html);
-            return $response;
-        });
-
         $app->get('/', '\App\Controller\IndexController:index')->setName('home');
+    }
 
-        $app->get('/portfolio', function($request, $response, $args) {
-            $html = $this->get('renderer')->render('app/portfolio');
-            $response->getBody()->write($html);
-            return $response;
-        })->setName('portfolio');
+    /**
+     * Removes files from the project tree
+     * @param string $dest The root of the project
+     * @return void
+     */
+    public function removeFiles($dest)
+    {
+        if ($path = realpath("$dest/martynbiz-app")) {
+            shell_exec("rm -rf $path");
+        }
     }
 }
