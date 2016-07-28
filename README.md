@@ -19,10 +19,8 @@ and will require a virtual host.
 
 TODO
 
-move modules to module dirs
-* copyFiles - cp -rn modules/martynbiz-auth
-* removeFiles - rm -rf modules/martynbiz-auth
-* add folders to Foil
+merge modules/app into modules/martynbiz-core (rename martynbiz-app?)
+write 
 
 build a japantravel port with slim-module-blog
 * build homepage
