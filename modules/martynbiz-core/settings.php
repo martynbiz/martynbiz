@@ -5,6 +5,9 @@ return [
 
         // Renderer settings
         'renderer' => [
+            'folders' => [
+                'martynbiz-core' => APPLICATION_PATH . '/modules/martynbiz-core/templates',
+            ],
             'ext' => 'phtml',
         ],
 
@@ -24,7 +27,7 @@ return [
             'type' => 'phparray',
 
             // where the translation files are stored
-            'file_path' => APPLICATION_PATH . '/modules/martynbiz-app/language/',
+            'file_path' => APPLICATION_PATH . '/modules/application/language/',
         ],
 
         'mail' => [

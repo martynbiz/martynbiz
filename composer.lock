@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e20a61f88d10830c33a14205f2307db",
-    "content-hash": "5971088ee7bc7c5bc2da2d16d35ec31f",
+    "hash": "1130ae1d47d567b6ec647714025c4f8a",
+    "content-hash": "c4939c896e2d6d0334d86a37ccdc9ea6",
     "packages": [
         {
             "name": "aura/html",
@@ -472,6 +472,39 @@
             "time": "2016-01-21 12:37:48"
         },
         {
+            "name": "martynbiz/php-helpers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martynbiz/php-helpers.git",
+                "reference": "0eded8f3febbcb54007b355c88b2669e973814d1"
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/string_functions.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martyn Bissett",
+                    "email": "martynbissett@yahoo.co.uk",
+                    "homepage": "http://martyn.biz",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2016-07-23 00:02:57"
+        },
+        {
             "name": "martynbiz/php-mongo",
             "version": "dev-master",
             "source": {
@@ -604,12 +637,91 @@
             "time": "2016-07-25 15:50:49"
         },
         {
+            "name": "martynbiz/slim-module-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martynbiz/slim-module-auth.git",
+                "reference": "06810d4edccec12103d7e9d27b3c149cf00e1f1e"
+            },
+            "require": {
+                "martynbiz/slim-module": "dev-master",
+                "martynbiz/slim-module-core": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MartynBiz\\Slim\\Module\\Auth\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martyn Bissett",
+                    "email": "martynbissett@yahoo.co.uk",
+                    "homepage": "http://martyn.biz",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "modules",
+                "slim"
+            ],
+            "time": "2016-07-27 13:50:16"
+        },
+        {
+            "name": "martynbiz/slim-module-blog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martynbiz/slim-module-blog.git",
+                "reference": "ceeffd4edfd4ae5112eceff645a98daf6e7d72ca"
+            },
+            "require": {
+                "martynbiz/slim-module": "dev-master",
+                "martynbiz/slim-module-auth": "dev-master",
+                "martynbiz/slim-module-core": "dev-master",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MartynBiz\\Slim\\Module\\Blog\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martyn Bissett",
+                    "email": "martynbissett@yahoo.co.uk",
+                    "homepage": "http://martyn.biz",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "modules",
+                "slim"
+            ],
+            "time": "2016-07-27 12:49:02"
+        },
+        {
             "name": "martynbiz/slim-module-core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martynbiz/slim-module-core.git",
-                "reference": "2f8f3497a69e73d16d61178c00f66a9f48121353"
+                "reference": "7e405278d2e04322c962ad6641b29e18d7655c1e"
             },
             "require": {
                 "aura/session": "^2.0",
@@ -654,7 +766,7 @@
                 "modules",
                 "slim"
             ],
-            "time": "2016-07-27 13:49:23"
+            "time": "2016-07-28 02:16:54"
         },
         {
             "name": "monolog/monolog",
@@ -2748,7 +2860,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "martynbiz/slim-module-core": 20
+        "martynbiz/slim-module-blog": 20,
+        "martynbiz/php-helpers": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

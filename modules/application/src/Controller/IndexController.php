@@ -7,6 +7,17 @@ class IndexController extends BaseController
 {
     public function index($request, $response, $args)
     {
-        $this->render('application::index/index');
+        $container = $this->getContainer();
+
+        $articles = $container->get('blog.model.article')->find([
+            //..
+        ], [ 'limit' => 5 ]);
+
+        $carouselPhotos = $container->get('blog.model.photo')->find([
+            //..
+        ], [ 'limit' => 5 ]);
+
+
+        $this->render('application::index/index', compact('articles', 'carouselPhotos'));
     }
 }
